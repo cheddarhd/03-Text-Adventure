@@ -35,7 +35,7 @@ def main():
     with open('themall.json') as json_file:
         game = json.load(json_file)
 
-    current = 'WHOUS'
+    current = 'MIDDLE'
 
     quit = False
 
