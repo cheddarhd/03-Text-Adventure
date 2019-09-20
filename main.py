@@ -1,21 +1,12 @@
-import sys, logging, json
+import sys, os, json
 
-#check to make sure we are running the right version of Python
 version = (3,7)
 assert sys.version_info >= version, "This script requires at least Python {0}.{1}".format(version[0],version[1])
 
-#turn on logging, in case we have to leave ourselves debugging messages
-logging.basicConfig(format='[%(filename)s:%(lineno)d] %(message)s', level=logging.DEBUG)
-logger = logging.getLogger(__name__)
 
 
 
-
-def main():
-    game = {}
-    with open('thegame.json') as json_file:
-        game = json.load(json_file)
-
+# Game loop functions
 def render(game,current):
     ''' Displays the current room '''
 
@@ -36,13 +27,29 @@ def update(response,game,current):
             current = e['target']
     return current
 
-    current = 'Starting place'
 
 
-    return True
+def main():
+
+    game = {}
+    with open('themall.json') as json_file:
+        game = json.load(json_file)
+
+    current = 'WHOUS'
+
+    quit = False
+
+    while not quit:
+
+        render(game,current)
+        response = getInput()
+        current = update(response,game,current)
+
+        if response == 'QUIT':
+            quit = True
 
 
 
-#if we are running this from the command line, run main
+
 if __name__ == '__main__':
 	main()

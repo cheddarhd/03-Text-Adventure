@@ -1,0 +1,360 @@
+{
+    "verbs": [
+      {
+        "v": "EXITS",
+        "map": "EXITS"
+      },
+      {
+        "v": "QUIT",
+        "map": "QUIT"
+      },
+      {
+        "v": "Q",
+        "map": "QUIT"
+      },
+      {
+        "v": "GET ME OUT OF HERE!",
+        "map": "QUIT"
+      },
+      {
+        "v": "NORTH",
+        "map": "NORTH"
+      },
+      {
+        "v": "N",
+        "map": "NORTH"
+      },
+      {
+        "v": "SOUTH",
+        "map": "SOUTH"
+      },
+      {
+        "v": "S",
+        "map": "SOUTH"
+      },
+      {
+        "v": "EAST",
+        "map": "EAST"
+      },
+      {
+        "v": "E",
+        "map": "EAST"
+      },
+      {
+        "v": "WEST",
+        "map": "WEST"
+      },
+      {
+        "v": "W",
+        "map": "WEST"
+      },
+      {
+        "v": "NE",
+        "map": "NE"
+      },
+      {
+        "v": "NORTHEAST",
+        "map": "NE"
+      },
+      {
+        "v": "NW",
+        "map": "NW"
+      },
+      {
+        "v": "NORTHWEST",
+        "map": "NW"
+      },
+      {
+        "v": "SE",
+        "map": "SE"
+      },
+      {
+        "v": "SOUTHEAST",
+        "map": "SE"
+      },
+      {
+        "v": "SOUTHWEST",
+        "map": "SW"
+      },
+      {
+        "v": "UP",
+        "map": "UP"
+      },
+      {
+        "v": "U",
+        "map": "UP"
+      },
+      {
+        "v": "DOWN",
+        "map": "DOWN"
+      },
+      {
+        "v": "D",
+        "map": "DOWN"
+      },
+      {
+        "v": "ENTER",
+        "map": "ENTER"
+      },
+      {
+        "v": "OUT",
+        "map": "OUT"
+      },
+      {
+        "v": "EXIT",
+        "map": "EXIT"
+      },
+      {
+        "v": "LEAVE",
+        "map": "LEAVE"
+      },
+      {
+        "v": "LAND",
+        "map": "LAND"
+      },
+      {
+        "v": "#!#!#",
+        "map": "#!#!#"
+      },
+      {
+        "v": "LAUNC",
+        "map": "LAUNC"
+      },
+      {
+        "v": "CROSS",
+        "map": "CROSS"
+      },
+      {
+        "v": "TAKE",
+        "map": "TAKE"
+      },
+      {
+        "v": "GET",
+        "map": "TAKE"
+      }
+    ],
+    "rooms": {
+      "MIDDLE": {
+        "name": "WAKE UP!",
+        "desc": "You open your eyes are your in the middle of dark empty what looks to be a shopping mall. Everywhere you look you you see a different direction you can walk down",
+        "exits": [
+          {
+            "verb": "NORTH",
+            "target": "LOC2",
+            "condition": ""
+          },
+          {
+            "verb": "SOUTH",
+            "target": "LOC4",
+            "condition": ""
+          },
+          {
+            "verb": "WEST",
+            "target": "LOC1",
+            "condition": ""
+          },
+          {
+            "verb": "EAST",
+            "target": "LOC3",
+            "condition": ""
+          }
+        ],
+        "inventory": []
+      },
+      "LOC2": {
+        "name": "Abandoned Sears",
+        "desc": "You see an outline on the top of a large opening to the store. You see it outlines sears. The ceilings are very high and it looks too large to find your way around. Looks like you can go east or west.",
+        "exits": [
+          {
+            "verb": "WEST",
+            "target": "LOC8",
+            "condition": ""
+          },
+          {
+            "verb": "EAST",
+            "target": "LOC7",
+            "condition": ""
+          },
+          {
+            "verb": "SOUTH",
+            "target": "MIDDLE",
+            "condition": ""
+          }
+        ],
+        "inventory": []
+      },
+      "LOC3": {
+        "name": "Creepy Hallway",
+        "desc": "You walk all the way to what looks like the end of this side of the mall. You look North and South to and are contemplating which way to go. Both are equally dark but you know you need to get out of here.",
+        "exits": [
+          {
+            "verb": "WEST",
+            "target": "MIDDLE",
+            "condition": ""
+          },
+          {
+            "verb": "NORTH",
+            "target": "LOC7",
+            "condition": ""
+          },
+          {
+            "verb": "SOUTH",
+            "target": "LOC6",
+            "condition": ""
+          }
+        ],
+        "inventory": []
+      },
+      "LOC4": {
+        "name": "South end of mall",
+        "desc": "You see an exit sign and doors to the mall but they are barricaded off by random junk and cinderblocks. You look East and West too find a way out.",
+        "exits": [
+          {
+            "verb": "NORTH",
+            "target": "MIDDLE",
+            "condition": ""
+          },
+          {
+            "verb": "EAST",
+            "target": "CLEAR",
+            "condition": ""
+          },
+          {
+            "verb": "WEST",
+            "target": "LOC5",
+            "condition": ""
+          },
+          {
+            "verb": "EAST",
+            "target": "LOC6",
+            "condition": ""
+          }
+        ],
+        "inventory": []
+      },
+      "LOC5": {
+        "name": "SOUTHWEST CORNER OF MALL",
+        "desc": "As your walking you approach another end of the mall, you see a semi lit up Hot-Topic to the West. It seems to be the only store that actually still has stuff in it. You think to check it out or keep moving.",
+        "exits": [
+          {
+            "verb": "EAST",
+            "target": "LOC4",
+            "condition": ""
+          },
+          {
+            "verb": "WEST",
+            "target": "LOSE",
+            "condition": ""
+          },
+          {
+            "verb": "NORTH",
+            "target": "LOC1",
+            "condition": ""
+          }
+        ],
+        "inventory": []
+      },
+      "LOC1": {
+        "name": "Toys R US",
+        "desc": "You look to the left at a run down Toy R Us. You wonder how long before the mall was abandoned did it get shutdown.",
+        "exits": [
+          {
+            "verb": "NORTH",
+            "target": "LOC8",
+            "condition": ""
+          },
+          {
+            "verb": "WEST",
+            "target": "MIDDLE",
+            "condition": ""
+          },
+          {
+            "verb": "SOUTH",
+            "target": "LOC5",
+            "condition": ""
+          }
+        ],
+        "inventory": []
+      },
+      "LOC8": {
+        "name": "The Long Hallway",
+        "desc": "You come to another corner of the mall to which you see a really small door on the west wall.",
+        "exits": [
+          {
+            "verb": "EAST",
+            "target": "WIN",
+            "condition": ""
+          },
+          {
+            "verb": "SOUTH",
+            "target": "LOC1",
+            "condition": ""
+          },
+          {
+            "verb": "WEST",
+            "target": "LOC2",
+            "condition": ""
+          }
+        ],
+        "inventory": []
+      },
+      "LOC6": {
+        "name": "Southeast Corner of the Mall",
+        "desc": "You have seem to hit the darkest corner of the mall. It is hard to see your hand a foot in front of your face. Looks like you can go north or west.",
+        "exits": [
+          {
+            "verb": "NORTH",
+            "target": "LOC3",
+            "condition": ""
+          },
+          {
+            "verb": "WEST",
+            "target": "LOC4",
+            "condition": ""
+          }
+        ],
+        "inventory": []
+      },
+      "LOC7": {
+        "name": "Northeast Corner of Mall",
+        "desc": "You have hit the top of the mall to which you see the old food court. A row of chick-fil-a, Panda Express, Little Caesers, and Jimmy Johns line the north wall.",
+        "exits": [
+          {
+            "verb": "WEST",
+            "target": "LOC2",
+            "condition": ""
+          },
+          {
+            "verb": "SOUTH",
+            "target": "LOC3",
+            "condition": ""
+          }
+        ],
+        "inventory": []
+      },
+      "WIN": {
+        "name": "the parking lot of the mall.",
+        "desc": "Congrats you made it out in one piece.",
+        "exits": [
+          {
+            "verb": "EXIT",
+            "target": "MIDDLE",
+            "condition": ""
+          }
+        ],
+        "inventory": []
+      },
+      "LOSE": {
+        "name": "Hot Topic, Forever",
+        "desc": "You stumble over a christmas thong and eaten by an evil troll who roams the hot topic.",
+        "exits": [
+          {
+            "verb": "EXIT",
+            "target": "MIDDLE",
+            "condition": ""
+          }
+        ],
+        "inventory": []
+      }
+    }
+  }
