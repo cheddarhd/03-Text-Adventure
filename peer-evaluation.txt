@@ -1,0 +1,35 @@
+Name: Trevor Hosek 
+Date: 9/27/19
+Project: 03-Text-Adventure
+Peer's repository: https://github.com/cheddarhd/03-Text-adventure.git
+
+
+What is something you learned by reviewing your peer's project?
+I learned that you can assign multiple of the same verb in a json file and it will still be valid json.
+ 
+
+What is something you saw in your peer's project that you would like to apply to your own programming projects?
+Their json file is much cleaner than mine
+
+What suggestions would you have for your peer to improve his/her code?
+Remove the duplicate verbs in your json file, make it more clear which directions the player can go, maybe by using a method to list them off
+ 
+
+What could have been clearer or better commented?
+There are few comments throughout the main.py code, better commenting would help to make your code more clear and understandable
+ 
+
+Was there anything in the code that was confusing to you? If so, what?
+no
+ 
+
+Does the repository contain an appropriate LICENSE?
+Yes, however the license uses their github username instead of their actual name.
+ 
+
+What is something he/she could add to the README.md to make it more descriptive?
+The readme is pretty clear for the scope of this assignment, maybe some explanations of how they based their json and engine
+ 
+
+Pay a compliment to your peer based on the quality of his/her code.
+Your main.py is very clean and precise.
